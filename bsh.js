@@ -1,3 +1,5 @@
+var books = [];
+
 console.log("Welcome");
 $(document).ready(function(){
   $(".addBookForm button").on("click", function(){
@@ -6,5 +8,6 @@ $(document).ready(function(){
     newBook.authorName = $(".addBookForm input:nth(1)").val();
     newBook.score = $(".addBookForm input:nth(2)").val();
     console.log(newBook);
+    books.push(newBook);
   });
 });
