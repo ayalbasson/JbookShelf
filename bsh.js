@@ -9,11 +9,11 @@ $(document).ready(function(){
     newBook.score = $(".addBookForm input:nth(2)").val();
     //console.log(newBook);
     var newLi = $("<li>");
-    var nameSpan = $("<span>");
+    var nameSpan = $("<div>");
     nameSpan.html(newBook.bookName);
-    var authorSpan = $("<span>");
+    var authorSpan = $("<div>");
     authorSpan.html(newBook.authorName);
-    var scoreSpan = $("<span>");
+    var scoreSpan = $("<div>");
     scoreSpan.html(newBook.score);
     newLi.append(nameSpan).append(authorSpan).append(scoreSpan);
     $("ul").append(newLi);
