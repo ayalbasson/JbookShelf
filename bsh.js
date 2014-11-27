@@ -22,7 +22,7 @@ $(document).ready(function(){
     xSpan.on("click", function(){
       $("#" + newBook.id).remove();
     });
-    newLi.append(nameSpan).append(authorSpan).append(scoreSpan);
+    newLi.append(nameSpan).append(authorSpan).append(scoreSpan).append(xSpan);
     $("ul").append(newLi);
     books.push(newBook);
   });
