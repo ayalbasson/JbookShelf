@@ -21,6 +21,15 @@ $(document).ready(function(){
     xSpan.html("X");
     xSpan.on("click", function(){
       $("#" + newBook.id).remove();
+      
+    var edit = $("div");
+    edit.html("edit");
+    edit.on("click",function()){
+      
+      $("#" + newBook.id).replace();
+      
+    }
+    
     });
     newLi.append(nameSpan).append(authorSpan).append(scoreSpan).append(xSpan);
     $("ul").append(newLi);
